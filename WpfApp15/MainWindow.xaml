@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas x:Name="mijnCanvas" HorizontalAlignment="Left" Height="236" Margin="204,24,0,0" VerticalAlignment="Top" Width="284" Background="#FF595959"/>
+        <Slider x:Name="horizSlider" HorizontalAlignment="Left" Height="30" Margin="204,265,0,0" VerticalAlignment="Top" Width="284" ValueChanged="horizSlider_ValueChanged"/>
+        <Slider x:Name="vertSlider" HorizontalAlignment="Left" Height="21" Margin="71,130,0,0" VerticalAlignment="Top" Width="233" RenderTransformOrigin="0.5,0.5" ValueChanged="vertSlider_ValueChanged">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.156"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Label x:Name="vertLabel" Content="" HorizontalAlignment="Left" Height="49" Margin="93,118,0,0" VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.631,0.659">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.373"/>
+                    <TranslateTransform X="-0.238" Y="0.279"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="horizLabel" Content="" HorizontalAlignment="Left" Height="24" Margin="332,285,0,0" VerticalAlignment="Top" Width="156"/>
+
     </Grid>
 </Window>
